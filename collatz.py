@@ -23,8 +23,8 @@ while loop:
     try:
         number = int(input("Enter an integer: "))
         loop = False
-    except:
-        print("Please enter a valid integr number..")
+    except ValueError as ve:
+        print(ve, "\nPlease enter a valid integr number..")
         
 
 def collatz(number):
