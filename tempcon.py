@@ -12,7 +12,8 @@ while loop:
     try:
         fahrenheit = float(input("Enter the temp in fahrenheit: "))
         celcius = (fahrenheit - 32) * 5/9
-        print("The temperature of %.2f deg celcius is %.2f degree fahrenheit" %(fahrenheit, celcius))
+        print("The temperature of %.2f deg celcius is %.2f degree \
+fahrenheit" %(fahrenheit, celcius))
         loop = False
     except ValueError as e:
         print("Please enter a numerical value for fahrenheit..", e)
