@@ -28,7 +28,7 @@ print(myList)
 
 """ 
     There is another way of implementing this code
-    Looping the throught the list and then appending the int that
+    Looping the through the list and then appending the int that
     meets the coditions stated above
     			OR
     You can use print through out without the code leaving out the list
