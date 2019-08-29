@@ -16,9 +16,11 @@ for row in range(n+1, 1, -1):
 #filename: ./trials/BusinessCast1.py
 #! /usr/bin/python3
 # verion 1.0
-# this is a die game, asks the user for an input and then ckecks what the number is
+# this is a die game, asks the user for an input and then ckecks what the 
+# number is
 # there is a reduction in points depending on the input
-# As silly and biased as this game (script) may be, it is the base for the version 2
+# As silly and biased as this game (script) may be, it is the base for the 
+# version 2
 # this version is thought provoking and you can bring on board your ideas
 
 # how points are distributed
@@ -389,7 +391,9 @@ print(count_chars(text))
 
 #filename: ./trials/rmvlistdupct.py
 # You can do all  this on one line or two or more
-names = ["Ama", "Cynthia", "Kofi", "Esi", "Ama", "Frank", "Grace", "Frank", "Aseda", "Ama", "Patience"]
+names = [
+	"Ama", "Cynthia", "Kofi", "Esi", "Ama", "Frank", 
+	"Grace", "Frank", "Aseda", "Ama", "Patience"]
 names = list(set(names))
 print(names)
 
@@ -525,7 +529,8 @@ def genfilename(targetfile='hellomybabyhellomygirl', fileextension='.txt'):
     return [targetfile, fileextension]
     
 
-def copyall(targetfile=''.join(genfilename()[0]), fileextension=''.join(genfilename()[1]), mode='w+'):
+def copyall(targetfile=''.join(genfilename()[0]), 
+	fileextension=''.join(genfilename()[1]), mode='w+'):
     """ takes file name as first arg, else it calls the genfilename(), 
     fileextension as second arg, this  refers to the extension of the files 
     you want to read, by default, it takes the extension of the target file
@@ -558,7 +563,8 @@ print(copyall())
 #     fileextension: this is the file extension and by default is .txt
 #     filemode: this is the file mode(a+, w+, r+)"""
 #     for i in glob('*'+ fileextension):
-#         print("#file name: " + str(i), open(i, 'r').read(), sep='\n', file=open(filepath, filemode))
+#         print("#file name: " + str(i), open(i, 'r').read(), sep='\n',
+# file=open(filepath, filemode))
     
 #     return 'Copied: True' + ' into File: ' + filepath
 
@@ -644,9 +650,11 @@ for row in range(n, 0, -1):
 #filename: ./trials/BusinessCast2.py
 #! /usr/bin/python3
 # version 2.0
-# this is a die game, asks the user for an input and then checks if it is equal to a particular number
+# this is a die game, asks the user for an input and then 
+# checks if it is equal to a particular number
 # there is a reduction in dollar depending on the input
-# As silly and biased as this game (script) may be, it is the base for the version 3
+# As silly and biased as this game (script) may be, it is the base for 
+# the version 3
 # this version is thought provoking and you can bring on board your ideas
 
 # how points are distributed
@@ -752,6 +760,8 @@ def key_mat():
                     key = [a, b, c, d]
                     det = (key[0] * key[3]) - (key[1] * key[3])
                     if (det % 2 != 0) and (det % 13 != 0):
-                        print("The matrix, ", key, "is suitable and has a determinant of", det)
+                        print("The matrix, ", key, "is suitable and has a \
+determinant of", det)
 
 key_mat()
+
