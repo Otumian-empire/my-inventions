@@ -18,4 +18,5 @@ milespergallons = float(input('Enter the miles travelled per gallon: '))
 # the number of miles the automobile can be driven without refueling
 numberofmiles = fuelcapacity * milespergallons
 
-print('The automobile can be driven without refueling for', numberofmiles, 'miles travelled')
+print('The automobile can be driven without refueling for', numberofmiles,
+ 'miles travelled')
