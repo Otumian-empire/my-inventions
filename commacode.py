@@ -1,4 +1,5 @@
-# Say you have a list value like this: spam = ['apples', 'bananas', 'tofu', 'cats']
+# Say you have a list value like this: spam = ['apples', 'bananas', 'tofu',
+# 'cats']
 # Write a function that takes a list value as an argument and returns 
 # a string with all the items separated by a comma and a space, with and
 # inserted before the last item. For example, passing the previous 
