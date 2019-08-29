@@ -1,5 +1,5 @@
 #1. write a program to print even and odd numbers using switch cases
-print("\n\n\tAssignment number 1 \n")
+print("\r\n\r\n\tAssignment number 1 \r\n")
 print("write a program to print even and odd numbers using switch cases\n")
 starting_limit = 1
 ending_limit = 100
@@ -13,9 +13,11 @@ for i in range(starting_limit, ending_limit):
         pass
 
 
-#2. write a programme to print the largest and smallest number and arrange user inputer from decreasing order and vise versa
-print("\n\n\tAssignment number 2 \n")
-print("write a programme to print the largest and smallest number and arrange user inputer from decreasing order and vise versa\n")
+#2. write a programme to print the largest and smallest number and arrange
+# user inputer from decreasing order and vise versa
+print("\r\n\r\n\tAssignment number 2 \r\n")
+print("write a programme to print the largest and smallest number and \
+arrange user inputer from decreasing order and vise versa\r\n")
 
 def num_func(number = input("Enter a number: ")):
     number = list(number)
@@ -39,9 +41,11 @@ def num_func(number = input("Enter a number: ")):
 # calling the above function
 num_func()
 
-# #3. write a program to print a set of prime numbers  from user input in range of 1 - 1000000
-print("\n\n\tAssignment number 3 \n")
-print("write a program to print a set of prime numbers  from user input in range of 1 - 1000000\n")
+# #3. write a program to print a set of prime numbers  from user input in
+# range of 1 - 1000000
+print("\r\n\r\n\tAssignment number 3 \r\n")
+print("write a program to print a set of prime numbers  from user input in \
+range of 1 - 1000000\r\n")
 
 # a list that will hold the prime numbers
 prime_numbers_list = []
@@ -74,19 +78,21 @@ print(prime_numbers_list)
 
 
 #4. write a programe to print your name using punctuation marks
-print("\n\n\tAssignment number 4 \n")
-print("write a programe to print your name using punctuation marks\n")
+print("\r\n\r\n\tAssignment number 4 \r\n")
+print("write a programe to print your name using punctuation marks\r\n")
 
-"""My name is Otu"""
+# My name is Otu
 print("$$$$$    $    $   $")
 print("$   $  $$$$$  $   $")
 print("$   $    $    $   $")
 print("$   $    $    $   $")
 print("$$$$$    $$$  $$$$$")
 
-#5. write a program that calculates and prints out the sum of all natural numbers divisible by 3 or 5, up to a given limit entered by the user. 
-print("\n\n\tAssignment number 5 \n")
-print("write a program that calculates and prints out the sum of all natural numbers divisible by 3 or 5, up to a given limit entered by the user. \n")
+#5. write a program that calculates and prints out the sum of all natural
+# numbers divisible by 3 or 5, up to a given limit entered by the user. 
+print("\r\n\r\n\tAssignment number 5 \r\n")
+print("write a program that calculates and prints out the sum of all natural \
+numbers divisible by 3 or 5, up to a given limit entered by the user. \r\n")
 limit = 1000
 sum_of_natural_nums = 0
 
@@ -96,4 +102,6 @@ for i in range(limit):
     else:
         pass
 
-print("The sum of all Natural numbers divisible by 3 or 5 in a range of %d is %d" % (limit, sum_of_natural_nums))
+print("The sum of all Natural numbers divisible by 3 or 5 in a range of %d \
+is %d" % (limit, sum_of_natural_nums))
+
