@@ -1,28 +1,26 @@
 import random
-""" 
-Otumian
-This is a simple test based console gambling game.
-It has not yet met its target as i thought for it.
-I just started jotting the general game proccss down as 
-i was reading on how the ATM works and also to use a 
-flowchart to explain how a merchant transacts business
-electronically using visa cards, master cards, etc (I am 
-refering to the cards, e-payment)
 
-My jottings:
-* Give the self a name and an initial cash (default, $1000)
-* Ask the user for his name later in the game, when user is 
-making more money
-* Randomly generate a number in a range and prompt self to
-guess the number
-* if self guess is right, double bet and to cash
-* else, double and subtract
-* bet are in folds of $100
+# author: Otumian
+# description: This is a simple test based console gambling game.
+#	 It has not yet met its target as i thought for it.
+#	 I just started jotting the general game proccss down as 
+#	 i was reading on how the ATM works and also to use a 
+#	 flowchart to explain how a merchant transacts business
+#	 electronically using visa cards, master cards, etc (I am 
+#	 refering to the cards, e-payment)
 
-That's it.. Thanks
+# My jottings:
+#	 * Give the self a name and an initial cash (default, $1000)
+#	 * Ask the user for his name later in the game, when user is 
+#	 making more money
+#	 * Randomly generate a number in a range and prompt self to
+#	 guess the number
+#	 * if self guess is right, double bet and to cash
+#	 * else, double and subtract
+#	 * bet are in folds of $100
 
+# That's it.. Thanks
 
-"""
 class Game:
 
     def __init__(self, cash, username, bet=0):
@@ -30,11 +28,13 @@ class Game:
         self.username = username
         self.bet = bet
 
-    # this function is to return the selfs detail
+    # this function is to return the user's details
     def info(self):
         strinfo  = "hello " + self.username + ", you have "
         strinfo += "$" + str(self.cash) + " is your asset.."
-        strinfo += "and you've place a bet of $" + str(self.bet) + ".. Good luck"
+        strinfo += "and you've place a bet of $" + str(self.bet)
+        strinfo += ".. Good luck"
+        
         return strinfo
 
     # this is to change the selfs name amids gaming
@@ -54,7 +54,8 @@ class Game:
                 
                 if self.cash > 100:
                     self.bet = 100
-                    print("For the love of the game, by default your bet is $" + str(self.bet))
+                    print("For the love of the game, by default your bet is $"
+                     + str(self.bet))
                     
         else:
             # i set your bet to 0 as the user didn't specify or chose
@@ -87,7 +88,8 @@ class Game:
                 # this is where the random numbers are generated
                 # you can alter this to suite your needa
                 cpunumber = random.randint(0, 2)
-                guess = int(input(self.username + " ..be smart and pick your lucky number: "))
+                guess = int(input(self.username + " ..be smart and pick your \
+lucky number: "))
 
                 if cpunumber == guess:
                     self.bet *= 3
@@ -95,7 +97,8 @@ class Game:
 
                     # print user info
                     print(self.info())
-                    print(self.username + ", you won thing time.. your cash is : " + str(self.cash))
+                    print(self.username + ", you won thing time.. your cash \
+is : " + str(self.cash))
                 else:
                     self.bet = 0
                     # print user info
@@ -103,7 +106,8 @@ class Game:
                     print(self.info())
 
                 if self.cash < 100:
-                    print("Man you have no cash.. You better walk away.. else i'd mob the dirty floor with your damn broke face..")
+                    print("Man you have no cash.. You better walk away.. \
+else i'd mob the dirty floor with your damn broke face..")
 
                     endgame = "no"
                     # print user info
@@ -112,10 +116,13 @@ class Game:
                     endgame = input("Do you want to keep playing? ").lower()
 
             except ValueError as e:
-                print("Dikward.. i bet your broke fat beefy ass you are a cash crop.. start with a hundred and I will double it in addition..")
+                print("Dikward.. i bet your broke fat beefy ass you are a \
+cash crop.. start with a hundred and I will double it in addition..")
 
         print(self.info())
 
-# create an object of the Game class and call the start method
+
+# create an instance object of the Game class and call the start method
 user = Game(1000, "f3erQ6$_")
 user.startgame()
+
