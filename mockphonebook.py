@@ -1,12 +1,15 @@
-# author: Otumian Dioratikos
-# purpose: I have no idea, Just playing or mocking a phonebook on the terminal
-# I was glancing through the book by al-sweigart - automate boring stuff with python
-# you may make it better but remember to also make yours as mine
-# let me know of how you wish to improves yours, perhaps i could borrow your your
-# idea for a second
-# I am a programmer and I have a beautiful life.. 
-# when you run the code for first time i recommend your first command should be
-# info or menu - to display the functionality
+# author: Otumian (github.com/otumian-empire)
+# purpose: 
+# 	I have no idea, Just playing or mocking a phonebook on the terminal
+# 	I was glancing through the book by al-sweigart - automate boring stuff with
+# 	python
+# 	you may make it better but remember to also make yours as mine
+# 	let me know of how you wish to improves yours, perhaps i could borrow your your
+# 	idea for a second
+# mantra:
+# 	I am a programmer and I have a beautiful life.. 
+# 	when you run the code for first time i recommend your first command should
+# 	be info or menu - to display the functionality
 
 namebook = []
 
@@ -49,7 +52,8 @@ while sentinel == True:
         print("enter exit, quit, q or shutdown, to close namebook!!")
         print("enter delete or del, to remove a name from namebook!!!")
         print("enter info or menu, to return the navigation menu!!!!")
-        print("enter name, names or namebook, to return all names in namebook!!!!!")
+        print("enter name, names or namebook, to return all names in \
+namebook!!!!!")
 
     elif name in namebook:
         print("The name, " + name + " already exist")
@@ -60,3 +64,4 @@ while sentinel == True:
 
     else:
         namebook.append(name)
+        
