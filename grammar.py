@@ -20,18 +20,26 @@ past_action_verbs = ['sat', 'stood', 'slept', 'jumped', 'coded', 'laughed',
 'jogged', 'cried', 'ate', 'rolled', 'drove', 'wrote', 'read', 'cooked']
 
 # list of objs
-objs = ['down', 'tall', 'early', 'up and down', 'in python', 'loudly', 
-'across the park', 'alone in the dark', 'tuna and bread', 'on the ground', 'a bus',
- 'azonto', 'a poem', 'Modern X86 Assembly Language Programming: 32-bit, 64-bit, SSE, and AVX by Daniel Kasswurm']
+objs = [
+	'down', 'tall', 'early', 'up and down', 'in python', 'loudly', 
+	'across the park', 'alone in the dark', 'tuna and bread', 
+	'on the ground', 'a bus',
+ 	'azonto', 'a poem', 
+ 	'Modern X86 Assembly Language Programming: 32-bit, 64-bit, SSE, and \
+AVX by Daniel Kasswurm']
 
 sentence1  = choice(subj) + " " + choice(past_action_verbs)
 print(sentence1)
 
-sentence2  = choice(subj) + " " + choice(aux_verbs) + " " + choice(action_verbs)
+sentence2  = choice(subj) + " " + choice(aux_verbs) + " "
+sentence2 += choice(action_verbs)
 print(sentence2)
 
-sentence3  = choice(subj) + " " + choice(aux_verbs) + " " + choice(action_verbs) + " " + choice(objs)
+sentence3  = choice(subj) + " " + choice(aux_verbs) + " "
+sentence3 += choice(action_verbs) + " " + choice(objs)
 print(sentence3)
 
-sentence4  = choice(subj) + " " + choice(past_action_verbs) + " " + choice(objs)
+sentence4  = choice(subj) + " " + choice(past_action_verbs) + " "
+sentence4 += choice(objs)
 print(sentence4)
+
