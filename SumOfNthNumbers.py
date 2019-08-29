@@ -1,4 +1,4 @@
-""" Recursive approach """
+# Recursive approach
 def sum_nth_numbers(number, total = 0):
     if (number > 0):
         total = sum_nth_numbers(number - 1, number + total)
@@ -7,7 +7,7 @@ def sum_nth_numbers(number, total = 0):
         return total
     
 
-""" Iterative approach """
+# Iterative approach
 def sum_nth_numbers1(number, total = 0):
     if (number == 0):
         return total
@@ -17,6 +17,7 @@ def sum_nth_numbers1(number, total = 0):
             total += number
             number -= 1
         return total
+
 
 testing1 = []
 for i in range(100):
@@ -33,7 +34,9 @@ for i in range(10):
     result = sum_nth_numbers1(i, 1)
     testing3.append(result)    
 
+
 print(testing1)
 print(len(testing1))
 print(testing2)
 print(testing3)
+
