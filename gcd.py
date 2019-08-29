@@ -1,4 +1,5 @@
-﻿# gcd.py
+﻿# greatest common divisor, gcd
+
 
 def gcd(a, b):
 	if b == 0:
