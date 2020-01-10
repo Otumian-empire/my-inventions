@@ -1,4 +1,4 @@
-# author: Otumian (github.com/otumian-empire)
+# author: Otumian (https://github.com/otumian-empire)
 # Description: 
 # 	To make a profit, a local store marks up the prices of its items 
 # 	by a certain percentage. Write a C++ program that reads the original 

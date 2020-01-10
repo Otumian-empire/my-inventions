@@ -7,10 +7,8 @@ ending_limit = 100
 for i in range(starting_limit, ending_limit):
     if (i % 2 == 0):
         print(i, "is even")
-    elif (i % 2 == 1):
-        print(i, "is odd")
     else:
-        pass
+		print(i, "is odd")
 
 
 #2. write a programme to print the largest and smallest number and arrange

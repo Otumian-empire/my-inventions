@@ -1,4 +1,4 @@
-# author: Otumian (github.com/otumian-empire)
+# author: Otumian (https://github.com/otumian-empire)
 # purpose: 
 # 	I have no idea, Just playing or mocking a phonebook on the terminal
 # 	I was glancing through the book by al-sweigart - automate boring stuff with

@@ -29,6 +29,11 @@ def return_average(*elements):
     print("The average of the five numbers is " + str(average_f))
 
     # print(len(elements))
+    
+def get_average(*elements):
+	num_elements = len(elements)
+	avg = sum(elements)/num_elements
+	print(f"The average of the {num_elements} numbers is {avg}")
 
 
 print("The average computed functionally")
