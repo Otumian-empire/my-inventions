@@ -15,6 +15,6 @@ def lcm(a, b):
 a = 24
 b = 18
 	
-print('the gcd of', a, 'and', b, 'is', gcd(a, b))
+print(f'the gcd of {a} and {b} is {gcd(a, b)}')
 
-print('the lcm of', a, 'and', b, 'is', lcm(a, b))
+print(f'the lcm of {a} and {b} is {lcm(a, b)}')
