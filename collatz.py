@@ -29,8 +29,8 @@ while loop:
 
 def collatz(number):
     print(number)
-    if number == 1:
-        return number
+    if number <= 1:
+        return 1
     else:
         if number % 2 == 0:
             returnval = number // 2
@@ -38,6 +38,6 @@ def collatz(number):
         elif number % 2 == 1:
             returnval = 3 * number + 1
             return collatz(returnval)
-
+            
 collatz(number)
 
