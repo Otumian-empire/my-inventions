@@ -1,0 +1,5 @@
+root("#14052C") #17145F
+menuFrame(bg="#3C0990")
+button(bg="#1D0446")
+textAreaFrame(bg="#170436")
+textArea(bg="#010014")
