@@ -3,20 +3,18 @@ using namespace std;
 
 int Addition(int j)
 {
-    int k;
-    k=2+j;
-    return k + j;
+    return 2 + j + j;
 }
 
 string Name(string name)
 {
-    return "my name is "<<name<<endl;
+    return "my name is " + name;
 }
 
 int main()
 {    
-    cout <<Addition(7);
-    cout<<Name("michael");
+    cout << Addition(7) << endl;
+    cout << Name("michael") << endl;;
     
     return 0;
 }
