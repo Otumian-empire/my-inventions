@@ -18,4 +18,4 @@ def when(param):
     it = iter()
 
 
-# i just thought to loop throught rather
+# i just thought to loop through rather

@@ -24,7 +24,7 @@ while loop:
         number = int(input("Enter an integer: "))
         loop = False
     except ValueError as ve:
-        print(ve, "\nPlease enter a valid integr number..")
+        print(f"{ve}\nPlease enter a valid integer number")
         
 
 def collatz(number):
@@ -34,10 +34,11 @@ def collatz(number):
     else:
         if number % 2 == 0:
             returnval = number // 2
-            return collatz(returnval)
+            
         elif number % 2 == 1:
-            returnval = 3 * number + 1
-            return collatz(returnval)
+            returnval = (3 * number) + 1
+            
+        return collatz(returnval)
             
 collatz(number)
 

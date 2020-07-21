@@ -70,7 +70,7 @@ buttonOpenFile.grid(row=0, column=0, padx=5)
 buttonOpenFile.configure(bg="#1D0446")
 
 # create a file or save as
-buttonSaveAsFile = Button(menuFrame, text="SavaAs", command=saveasfile)
+buttonSaveAsFile = Button(menuFrame, text="SaveAs", command=saveasfile)
 buttonSaveAsFile.grid(row=0, column=1, padx=5)
 buttonSaveAsFile.configure(bg="#1D0446")
 
@@ -85,5 +85,5 @@ textArea.grid(row=1, column=0, padx=10, pady=10)
 textArea.focus_set()
 textArea.configure(bg="#010014")
 
-
 mainloop()
+
